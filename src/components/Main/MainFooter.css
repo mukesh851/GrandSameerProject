@@ -1,0 +1,140 @@
+.main-footer-container{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+  width: 55rem;
+  background-color: #202f31;
+}
+
+.main-footer1{
+  width: 26rem;
+  height: 15rem;
+  padding-top: 2.5rem;
+  padding-left: 3.5rem;
+  padding-right: 1rem;
+  /* background-color: aqua; */
+  border: 2px solid yellow;
+}
+
+.main-footer2{
+  width: 26rem;
+  height: 15rem;
+  padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  /* padding: 2.5rem; */
+  /* background-color: aqua; */
+  border: 2px solid yellow;
+}
+
+.hero__featured__title {
+    color: hsla(0, 0%, 100%, .6);
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.3333;
+    text-transform: uppercase;
+}
+
+.hero__featured__text {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+    color: #fff;
+    flex: 1 1 auto;
+    padding-bottom: 1.3rem;
+    padding-top: 1.7rem;
+    font-size: 1.2rem;
+    
+}
+
+.link {
+    align-items: center;
+     color: #fff;
+    display: inline-flex;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.067;
+    text-decoration: none;
+    padding-top: 0.8rem;
+    
+}
+
+.link__icon-icon--arrow{
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+
+
+
+
+
+/* Widget */
+.main-footer-And-widget{
+  display: flex;
+  /* background-color: red; */
+}
+
+.widget{
+  width: 25.5rem;
+  margin-top: -8rem;
+  /* background-color: aqua; */
+}
+
+.widget-container{
+   background-color: #fff;
+   clip-path: polygon(0 0, calc(100% - 3.125rem) 0, 100% 3.125rem, 100% 100%, 0 100%);
+}
+
+.widget-inner{
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  
+}
+
+.widget__title {
+    font-size: 1.3125rem;
+    line-height: 1.556;
+    color: #333;
+    font-weight: 500;
+}
+
+.quickaccess__list{
+  padding-top: .2rem;
+}
+
+
+.quickaccess__list li{
+  margin-top: .7rem;
+  list-style: none;
+  /* background-color: red; */
+  height: 3rem;
+  width: 15rem;
+  height: 2.875rem;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  border: 1px solid #d7d5d5;
+  background: #fff;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  
+  
+}
+
+.quickaccess__list li a{
+  text-decoration-line: none;
+  color: #333;
+  
+}
+
+.quickaccess__list :hover{
+    background-color: #f0eeee;
+}
