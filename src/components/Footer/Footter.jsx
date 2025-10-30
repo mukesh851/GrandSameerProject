@@ -7,15 +7,16 @@ const Footer = () => {
         <div className="footer__top">
           <div className="footer-container1">
             <a href="/global/" class="footer-logo">
+            <div className='footer-logo-container'>
+              
+            </div>
               <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
+            
             </a>
           </div>
+          
+
+           {/* <div className='footer-container'></div> */}
 
           <div className='footer-container2'>
             <div className='footer-innner'>
@@ -87,7 +88,7 @@ const Footer = () => {
             <div className='footer-innner'>
               <div className="footer__navigation">
                 <h3 className="footer__title">
-                  <a href="/global/solutions/">Our Expertise</a>                           
+                  <a href="/global/solutions/">Our Expertise</a>
                 </h3>
 
                 <ul className="accordion__collapse">
@@ -115,7 +116,7 @@ const Footer = () => {
                 </h3>
                 <address className='accordian-address'>
                   <p>
-                    Grand Sameer Events Pvt. Ltd. 
+                    Grand Sameer Events Pvt. Ltd.
                   </p>
                   {/* <br></br> */}
                   <a href="tel: +31725400444">+31 72 5400444</a>
@@ -132,17 +133,70 @@ const Footer = () => {
               </div>
             </div>
 
-          </div>  
+          </div>
 
           <div className='footer-container3'>
-            <div className='email-container'>
-               <div className='email-details'>
-                <h3>Sign up for the newsletter</h3>
-                <p>You will receive an e-mail every month</p>
-               </div>
-               <div className='email-enter'>
-                <input type='email' placeholder='E-mail address'></input>
-               </div>
+            <div className='email-part-container'>
+
+              <div className='email-container'>
+                <div className='email-details'>
+                  <h3>Sign up for the newsletter</h3>
+                  <p>You will receive an e-mail every month</p>
+                </div>
+
+                <div className='emai-svg'>
+
+                  <div className='email-enter'>
+                    <input type='email' placeholder='E-mail address'></input>
+                  </div>
+
+                  <button type="submit" class="newsletter__submit" formtarget="_blank" aria-label="Send" fdprocessedid="mx0yg">
+                    <svg><use xlink:href="#icon-send"></use></svg>
+                  </button>
+                </div>
+
+
+
+
+              </div>
+              <div className='email-rightPart'>
+                <h3>Engage with us on:</h3>
+                <div className="social social--inv">
+                  <ul className="social__list">
+                    <li className="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="linkedin"><svg><use xlink:href="#icon-linkedin" focusable="false"></use></svg></a>
+                    </li>
+                    <li className="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="youtube"><svg><use xlink:href="#icon-youtube" focusable="false"></use></svg></a>
+                    </li>
+                    <li className="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="facebook"><svg><use xlink:href="#icon-facebook" focusable="false"></use></svg></a>
+                    </li>
+                    <li className="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="instagram"><svg><use xlink:href="#icon-instagram" focusable="false"></use></svg></a>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+                {/* <div className='social-app'>
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="linkedin"><svg><use xlink:href="#icon-linkedin" focusable="false"></use></svg></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="youtube"><svg><use xlink:href="#icon-youtube" focusable="false"></use></svg></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="facebook"><svg><use xlink:href="#icon-facebook" focusable="false"></use></svg></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="instagram"><svg><use xlink:href="#icon-instagram" focusable="false"></use></svg></a>
+                    </li>
+                  </ul>
+                </div> */}
+              </div>
             </div>
           </div>
         </div>

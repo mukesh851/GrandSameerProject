@@ -27,12 +27,50 @@
   /* padding: 5rem; */
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
+.nav-logo-heading h3{
+
+  font-size: .8rem; 
   color: #333;
   letter-spacing: 1px;
   cursor: pointer;
+  padding-left: 1.3rem;
+  /* text-decoration: none; */
+}
+
+
+.logo-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-shape{
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(167, 163, 163);
+  border-radius: 50%;
+  
+}
+.logo-container{
+  /* border: 2px solid black; */
+  width: 9rem;
+  height: 5rem;
+  /* padding-left: 1rem; */
+  /* padding-top: .5rem; */
+  
+}
+.logo-container a{
+  text-decoration: none;
+}
+.nav-logo-heading :hover{
+  color: rgb(86, 90, 87);
+}
+
+.logo {
+ /* background-color: yellow; */
+ /* border: 2px solid blue; */
+ /* margin-top: 1rem; */
+ /* padding: 1rem; */
+ /* height: 100%; */
 }
 
 /* Static nav menu */
@@ -105,64 +143,6 @@
   flex-shrink: 0;
 }
 
-
-/* logo */
-.logo {
-  display: flex;
-  align-items: center;
-  height: 63px;
-  width: 132px;
-}
-
-.logo svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.logo__text {
-  fill: #009739; /* Green Losberger brand color */
-  transition: fill 0.3s ease;
-}
-
-.logo:hover .logo__text {
-  fill: #007b5e;
-}
-
-/* Navigation menu */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav a {
-  color: #000;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #007b5e;
-}
-
-.nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #007b5e;
-  transition: width 0.3s ease;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
 
 
 
