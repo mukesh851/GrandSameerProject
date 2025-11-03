@@ -5,14 +5,15 @@ import Solutions from "./pages/Solutions/Solutions";
 import Industries from "./pages/Industries/Industries";
 import CaseStudies from "./pages/CaseStudies/CaseStudies";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Gallery from "./pages/Gallery/Gallery";
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
+import FullGallery from "./components/Gallery/FullGallery";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./components/Footer/footter";
-  
+import AllCasesPage from "./pages/casesPage/AllCasesPage";
 
 function App() {
   return (
-    <> 
+    <>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -21,13 +22,16 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/full-gallery" element={<FullGallery />} /> 
+          
           <Route path="/contact" element={<ContactUs />} />
+
+          {/* Cases */}
+          <Route path="/cases" element={<AllCasesPage />} />
         </Routes>
-
       </BrowserRouter>
-        <Footer />
-
+      <Footer />
     </>
   );
 }

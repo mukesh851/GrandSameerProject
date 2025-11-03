@@ -1,4 +1,6 @@
 import './Footer.css'
+import { BsGlobe } from "react-icons/bs";
+
 
 const Footer = () => {
   return (
@@ -6,17 +8,27 @@ const Footer = () => {
       <footer className='footer'>
         <div className="footer__top">
           <div className="footer-container1">
-            <a href="/global/" class="footer-logo">
             <div className='footer-logo-container'>
-              
-            </div>
-              <h2>Grand Sameer Events Pvt. Ltd.</h2>
-            
-            </a>
-          </div>
-          
 
-           {/* <div className='footer-container'></div> */}
+              <a href="/global/" class="footer-logo-link">
+                <div className='footer-logo-main'>
+                  <div className='footer-logo-shape'>
+                    <BsGlobe className="footer-global-logo" />
+                  </div>
+                  <div className='footer-logo-heading'>
+                    <h2>Grand Sameer Events Pvt. Ltd.</h2>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+
+
+
+
+
+          </div>
+
 
           <div className='footer-container2'>
             <div className='footer-innner'>

@@ -27,51 +27,54 @@
   /* padding: 5rem; */
 }
 
-.nav-logo-heading h3{
-
-  font-size: .8rem; 
-  color: #333;
-  letter-spacing: 1px;
-  cursor: pointer;
-  padding-left: 1.3rem;
-  /* text-decoration: none; */
-}
-
 
 .logo-main{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  
 }
 .logo-shape{
   width: 3rem;
   height: 3rem;
-  background-color: rgb(167, 163, 163);
-  border-radius: 50%;
+  /* background-color: rgb(167, 163, 163); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .global-logo{
+    width: 3rem;
+    height: 3rem;
+    color: rgb(42, 166, 166);
+  }
   
-}
 .logo-container{
   /* border: 2px solid black; */
-  width: 9rem;
-  height: 5rem;
+  /* width: 9rem;
+  height: 5rem; */
   /* padding-left: 1rem; */
-  /* padding-top: .5rem; */
-  
+  /* padding-top: .5rem;  */
 }
 .logo-container a{
   text-decoration: none;
 }
-.nav-logo-heading :hover{
-  color: rgb(86, 90, 87);
+
+.nav-logo-heading h3{
+  font-size: .9rem; 
+  font-weight: 500;
+  color: #333;
+  /* letter-spacing: 1px; */
+  cursor: pointer;
+  /* padding-left:1.3rem;  */
+  padding-top: .2rem;
 }
 
-.logo {
- /* background-color: yellow; */
- /* border: 2px solid blue; */
- /* margin-top: 1rem; */
- /* padding: 1rem; */
- /* height: 100%; */
+.nav-logo-heading :hover{
+  /* color: rgb(86, 90, 87); */
+  color: #007bff;
 }
+
 
 /* Static nav menu */
 .nav-menu.static {
