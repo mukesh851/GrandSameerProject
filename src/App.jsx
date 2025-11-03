@@ -8,8 +8,8 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import FullGallery from "./components/Gallery/FullGallery";
 import ContactUs from "./pages/ContactUs/ContactUs";
-import Footer from "./components/Footer/footter";
 import AllCasesPage from "./pages/casesPage/AllCasesPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
