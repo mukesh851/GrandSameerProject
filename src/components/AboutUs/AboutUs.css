@@ -1,0 +1,235 @@
+/* ===========================
+   ABOUT US SECTION
+=========================== */
+
+.about-section {
+  background-color: #fff;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  
+}
+
+/* Banner Section */
+.about-banner {
+  position: relative;
+  /* background: url("/images/about-banner.jpg") center/cover no-repeat; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 1rem 1rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.about-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Text Section */
+.about-content {
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0097a9;
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* ===========================
+   Image Grid (Responsive Fix)
+=========================== */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  margin-top: 7rem;
+}
+
+/* Each grid item */
+.grid-item {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Images */
+.grid-item img {
+  width: 35rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* Image content */
+.image-content1,
+.image-content2,
+.image-content3 {
+  max-width: 400px;
+  text-align: left;
+}
+
+.grid-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Vision Section
+=========================== */
+.about-vision {
+  background-color: #f2f4f7;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-vision h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.about-vision p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h4 {
+  color: var(--theme-color, #66c32f);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.value-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 1024px) {
+  .grid-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .image-content1,
+  .image-content2,
+  .image-content3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    height: auto;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-container {
+    padding: 50px 15px;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .grid-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .grid-item p {
+    font-size: 0.9rem;
+  }
+}

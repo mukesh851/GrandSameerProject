@@ -1,5 +1,6 @@
 // import React from 'react'
-import ContactForm from '../../components/Login/ContactForm'
+import ContactForm from "../../components/ContactForm/ContactForm"
+
 
 const ContactUs = () => {
   return (

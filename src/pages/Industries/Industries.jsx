@@ -1,8 +1,10 @@
-import React from 'react'
+import IndustriesSection from '../../components/IndustriesSection/IndustriesSection'
 
 const Industries = () => {
   return (
-    <div>Industries</div>
+    <>
+      <IndustriesSection />
+    </>
   )
 }
 

@@ -1,0 +1,179 @@
+/* ===========================
+   INDUSTRIES SECTION - Modern Losberger Style (Responsive)
+=========================== */
+
+.industries-section {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.industries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.industries-top {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 14rem;
+  padding: 4rem;
+}
+
+.industries-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.industries-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.industry-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: default;
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.industry-icon {
+  width: 48px;
+  height: 48px;
+  color: #0073e6;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  color: #005bb5;
+}
+
+.industry-card h3 {
+  font-size: 1.2rem;
+  color: #1f2d3d;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.industry-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .industries-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .industries-top {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .industries-title {
+    font-size: 2rem;
+  }
+
+  .industries-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .industries-grid {
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .industry-card {
+    padding: 1.8rem 1.3rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .industries-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .industries-top {
+    padding: 2.5rem 1rem;
+    height: auto;
+  }
+
+  .industries-title {
+    font-size: 1.7rem;
+  }
+
+  .industries-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .industry-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .industry-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .industries-section {
+    padding: 2rem 0.8rem;
+  }
+
+  .industries-title {
+    font-size: 1.5rem;
+  }
+
+  .industries-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .industry-card {
+    padding: 1.2rem;
+  }
+
+  .industry-icon {
+    width: 42px;
+    height: 42px;
+  }
+}

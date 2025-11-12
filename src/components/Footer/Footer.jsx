@@ -1,6 +1,10 @@
 import './Footer.css'
 import { BsGlobe } from "react-icons/bs";
-
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { GiPlayButton } from "react-icons/gi";
 
 const Footer = () => {
   return (
@@ -10,7 +14,7 @@ const Footer = () => {
           <div className="footer-container1">
             <div className='footer-logo-container'>
 
-              <a href="/global/" class="footer-logo-link">
+              <a href="/global/" className="footer-logo-link">
                 <div className='footer-logo-main'>
                   <div className='footer-logo-shape'>
                     <BsGlobe className="footer-global-logo" />
@@ -28,7 +32,6 @@ const Footer = () => {
 
 
           </div>
-
 
           <div className='footer-container2'>
             <div className='footer-innner'>
@@ -50,9 +53,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-
-
 
 
             <div className='footer-innner'>
@@ -123,7 +123,7 @@ const Footer = () => {
 
             <div className='footer-innner2' id='footer-innerID'>
               <div className='footer-inner-container'>
-                <h3 class="footer__title-container">
+                <h3 className="footer__title-container">
                   Contact details
                 </h3>
                 <address className='accordian-address'>
@@ -156,66 +156,55 @@ const Footer = () => {
                   <p>You will receive an e-mail every month</p>
                 </div>
 
-                <div className='emai-svg'>
-
+                <div className='email-svg'>
                   <div className='email-enter'>
                     <input type='email' placeholder='E-mail address'></input>
                   </div>
 
-                  <button type="submit" class="newsletter__submit" formtarget="_blank" aria-label="Send" fdprocessedid="mx0yg">
-                    <svg><use xlink:href="#icon-send"></use></svg>
+                  <button type="submit" className="newsletter__submit" >
+                    <GiPlayButton className="email-submit-icon"/>
                   </button>
                 </div>
-
-
 
 
               </div>
               <div className='email-rightPart'>
                 <h3>Engage with us on:</h3>
                 <div className="social social--inv">
-                  <ul className="social__list">
+                  <ul className= "social__list">
                     <li className="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="linkedin"><svg><use xlink:href="#icon-linkedin" focusable="false"></use></svg></a>
+                      <a href="">
+                        <FaLinkedinIn className="social-media-icon" />
+                      </a>
                     </li>
                     <li className="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="youtube"><svg><use xlink:href="#icon-youtube" focusable="false"></use></svg></a>
+                      <a href="">
+                        <FaYoutube className="social-media-icon" />
+                      </a>
                     </li>
                     <li className="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="facebook"><svg><use xlink:href="#icon-facebook" focusable="false"></use></svg></a>
+                      <a href="" >
+                        <FaFacebookF className="social-media-icon" />
+                      </a>
                     </li>
                     <li className="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="instagram"><svg><use xlink:href="#icon-instagram" focusable="false"></use></svg></a>
+                      <a href="" >
+                        <FaInstagram className="social-media-icon" />
+                      </a>
                     </li>
-
                   </ul>
                 </div>
-
-
-                {/* <div className='social-app'>
-                  <ul class="social__list">
-                    <li class="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="linkedin"><svg><use xlink:href="#icon-linkedin" focusable="false"></use></svg></a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="youtube"><svg><use xlink:href="#icon-youtube" focusable="false"></use></svg></a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="facebook"><svg><use xlink:href="#icon-facebook" focusable="false"></use></svg></a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" target="_blank" rel="noreferrer noopener" aria-label="instagram"><svg><use xlink:href="#icon-instagram" focusable="false"></use></svg></a>
-                    </li>
-                  </ul>
-                </div> */}
               </div>
+              
             </div>
           </div>
+
         </div>
       </footer>
     </div>
-    
+
   )
 }
 
 export default Footer
+

@@ -67,3 +67,4 @@ const MainGallery = () => {
 };
 
 export default MainGallery;
+

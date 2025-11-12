@@ -1,6 +1,5 @@
 .block {
   background-color: #fff;
-  /* padding: 3rem 0; */
   padding-top: 5rem;
 }
 
@@ -15,10 +14,14 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.section-header p {
+  color: #0097a9;
 }
 
 .top-title {
-  color: #0097a9;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -29,6 +32,7 @@
   font-size: 3rem;
   font-weight: 520;
   color: #202f31;
+  line-height: 1.2;
 }
 
 /* --- Columns --- */
@@ -58,6 +62,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.columns__image img:hover {
+  transform: scale(1.03);
 }
 
 .columns__text {
@@ -89,45 +98,63 @@
   color: #007d8d;
 }
 
-/* --- Responsive --- */
-@media (max-width: 1024px) {
+/* --- Responsive Breakpoints --- */
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
   .columns__image {
-    height: 260px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .columns {
+    gap: 1.8rem;
+  }
+  .columns__image {
+    height: 320px;
   }
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 1.6rem;
+  .section-header {
+    text-align: center;
   }
-
+  .section-title {
+    font-size: 1.8rem;
+  }
   .columns {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
   .columns__image {
-    height: 240px;
+    height: 260px;
+  }
+  .columns__text {
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .columns__image {
-    height: 200px;
+  .section-title {
+    font-size: 1.5rem;
   }
-
   .columns__title {
     font-size: 1.1rem;
   }
-
-  .section-title {
-    font-size: 1.4rem;
+  .columns__image {
+    height: 200px;
+  }
+  .columns__text p {
+    font-size: 1rem;
   }
 }
 
-
-
-
-/* SectionDivider.css */
+/* --- Divider --- */
 .block-border {
   width: 100%;
   padding: 0;
@@ -140,14 +167,9 @@
 }
 
 .divider--branded {
-   display: block;
+  display: block;
   width: 100%;
   height: 6px;
-  background-color: #e6e6e6;
-  position: relative;
-  margin: 60px 0;
-
-
   background: linear-gradient(
     to right,
     #009fe3 0%,
@@ -155,33 +177,18 @@
     #98c924 50%,
     #98c924 100%
   );
+  margin: 60px 0;
 }
 
-/* Responsive adjustments */
+/* Divider responsiveness */
 @media (max-width: 768px) {
-  .divider {
+  .divider--branded {
     margin: 40px 0;
   }
 }
 
 @media (max-width: 480px) {
-  .divider {
+  .divider--branded {
     margin: 30px 0;
   }
 }
-
-
-
-
-
-/* mainaGallery */
-
-
-
-
-
-
-
-
-
-
