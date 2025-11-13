@@ -1,5 +1,5 @@
 /* ===========================
-   ABOUT US SECTION
+   ABOUT US SECTION - RESPONSIVE
 =========================== */
 
 .about-section {
@@ -7,24 +7,26 @@
   color: #222;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  
+  margin-top: 3rem;
 }
 
 /* Banner Section */
 .about-banner {
   position: relative;
-  /* background: url("/images/about-banner.jpg") center/cover no-repeat; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-banner .overlay {
+.overlay {
   background: rgba(0, 0, 0, 0.55);
-  padding: 1rem 1rem;
   text-align: center;
   color: #fff;
   width: 100%;
+  max-width: 1200px;
+  height: 14rem;
+  margin: 0 auto;
+  padding-top: 2.5rem;
 }
 
 .about-title {
@@ -66,9 +68,7 @@
   color: #444;
 }
 
-/* ===========================
-   Image Grid (Responsive Fix)
-=========================== */
+/* Image Grid */
 .about-grid {
   display: flex;
   flex-direction: column;
@@ -76,7 +76,6 @@
   margin-top: 7rem;
 }
 
-/* Each grid item */
 .grid-item {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +95,6 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Images */
 .grid-item img {
   width: 35rem;
   max-width: 100%;
@@ -105,7 +103,6 @@
   border-radius: 0.5rem;
 }
 
-/* Image content */
 .image-content1,
 .image-content2,
 .image-content3 {
@@ -126,9 +123,7 @@
   line-height: 1.6;
 }
 
-/* ===========================
-   Vision Section
-=========================== */
+/* Vision Section */
 .about-vision {
   background-color: #f2f4f7;
   padding: 80px 20px;
@@ -184,10 +179,12 @@
 /* ===========================
    RESPONSIVE
 =========================== */
+
+/* Large Tablets */
 @media (max-width: 1024px) {
   .grid-item {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .image-content1,
@@ -197,6 +194,7 @@
   }
 }
 
+/* Tablets */
 @media (max-width: 768px) {
   .about-banner {
     height: auto;
@@ -220,6 +218,7 @@
   }
 }
 
+/* Small Mobiles */
 @media (max-width: 480px) {
   .about-title {
     font-size: 1.8rem;
@@ -231,5 +230,14 @@
 
   .grid-item p {
     font-size: 0.9rem;
+  }
+
+  .values-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .value-card {
+    width: 90%;
   }
 }

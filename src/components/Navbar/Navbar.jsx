@@ -1,21 +1,37 @@
 
+
 // import React, { useState } from "react";
 // import { BsGlobe } from "react-icons/bs";
 // import { FiSearch } from "react-icons/fi";
-// import { Link } from "react-router-dom";
-// import "./Navbar.css";
 // import { IoReorderThreeOutline } from "react-icons/io5";
-// // import installation1 from "../../assets/eventAndVideo/installation1.mp4"
+// import { Link, useLocation } from "react-router-dom";
+// import "./Navbar.css";
 
 // const Navbar = () => {
-//   const [homeHover, setHomeHover] = useState(false);
-//   const [solutionsHover, setSolutionsHover] = useState(false);
+//   const [activeDropdown, setActiveDropdown] = useState(null);
+//   const location = useLocation();
+
+//   // For active link color
+//   const getActiveClass = (path) =>
+//     location.pathname === path ? "active-link" : "";
+
+//   // Hover handler with delay
+//   let dropdownTimer;
+//   const handleMouseEnter = (name) => {
+//     clearTimeout(dropdownTimer);
+//     setActiveDropdown(name);
+//   };
+
+//   const handleMouseLeave = () => {
+//     dropdownTimer = setTimeout(() => {
+//       setActiveDropdown(null);
+//     }, 250);
+//   };
 
 //   return (
 //     <header className="navbar">
 //       <div className="navbar-container">
-
-//         {/* ===== LEFT SIDE LOGO (same as your original) ===== */}
+//         {/* ===== LEFT SIDE LOGO ===== */}
 //         <div className="logo-container">
 //           <Link to="/global" className="logo-link">
 //             <div className="logo-main">
@@ -32,23 +48,20 @@
 //         {/* ===== NAVIGATION MENU ===== */}
 //         <nav className="nav-links">
 //           <ul>
+//             {/* HOME DROPDOWN */}
 //             <li
-//               onMouseEnter={() => setHomeHover(true)}
-//               onMouseLeave={() => setHomeHover(false)}
+//               onMouseEnter={() => handleMouseEnter("home")}
+//               onMouseLeave={handleMouseLeave}
 //             >
-//               <Link to="/">Home</Link>
-//               {homeHover && (
-//                 <div className="dropdown home-dropdown">
+//               <Link to="/" className={getActiveClass("/")}>Home</Link>
+//               {activeDropdown === "home" && (
+//                 <div
+//                   className="dropdown home-dropdown"
+//                   onMouseEnter={() => handleMouseEnter("home")}
+//                   onMouseLeave={handleMouseLeave}
+//                 >
 //                   <div className="hero-banner">
 //                     <h2>Engineering Grandeur, Delivering Excellence.</h2>
-//                     {/* <video
-//                       className="hero-video"
-//                       autoPlay
-//                       loop
-//                       muted
-//                       // src= "installation1"
-//                       src="https://cdn.pixabay.com/video/2023/03/16/155763-808757158_tiny.mp4"
-//                     ></video> */}
 //                     <ul className="hero-highlights">
 //                       <li>10+ Years of Excellence</li>
 //                       <li>₹50+ Crores Infrastructure</li>
@@ -61,13 +74,23 @@
 //               )}
 //             </li>
 
+//             {/* SOLUTIONS DROPDOWN */}
 //             <li
-//               onMouseEnter={() => setSolutionsHover(true)}
-//               onMouseLeave={() => setSolutionsHover(false)}
+//               onMouseEnter={() => handleMouseEnter("solutions")}
+//               onMouseLeave={handleMouseLeave}
 //             >
-//               <Link to="/solutions">Solutions</Link>
-//               {solutionsHover && (
-//                 <div className="dropdown solution-dropdown">
+//               <Link
+//                 to="/solutions"
+//                 className={getActiveClass("/solutions")}
+//               >
+//                 Solutions
+//               </Link>
+//               {activeDropdown === "solutions" && (
+//                 <div
+//                   className="dropdown solution-dropdown"
+//                   onMouseEnter={() => handleMouseEnter("solutions")}
+//                   onMouseLeave={handleMouseLeave}
+//                 >
 //                   <ul>
 //                     <li>Corporate & Business Excellence</li>
 //                     <li>Government & Institutional Events</li>
@@ -81,15 +104,41 @@
 //               )}
 //             </li>
 
-//             <li><Link to="/industries">Industries We Serve</Link></li>
-//             <li><Link to="/case-studies">Case Studies</Link></li>
-//             <li><Link to="/about">About Us</Link></li>
-//             <li><Link to="/gallery">Gallery</Link></li>
-//             <li><Link to="/contact">Contact Us</Link></li>
+//             <li>
+//               <Link
+//                 to="/industries"
+//                 className={getActiveClass("/industries")}
+//               >
+//                 Industries We Serve
+//               </Link>
+//             </li>
+//             <li>
+//               <Link
+//                 to="/case-studies"
+//                 className={getActiveClass("/case-studies")}
+//               >
+//                 Case Studies
+//               </Link>
+//             </li>
+//             <li>
+//               <Link to="/about" className={getActiveClass("/about")}>
+//                 About Us
+//               </Link>
+//             </li>
+//             <li>
+//               <Link to="/gallery" className={getActiveClass("/gallery")}>
+//                 Gallery
+//               </Link>
+//             </li>
+//             <li>
+//               <Link to="/contact" className={getActiveClass("/contact")}>
+//                 Contact Us
+//               </Link>
+//             </li>
 //           </ul>
 //         </nav>
 
-//         {/* ===== RIGHT SIDE SEARCH + BUTTON ===== */}
+//         {/* ===== RIGHT SIDE ===== */}
 //         <div className="nav-right">
 //           <div className="searc-div">
 //             <button className="search-btn">
@@ -108,7 +157,11 @@
 //   );
 // };
 
-// export default Navbar;  
+// export default Navbar;
+
+
+
+
 
 
 import React, { useState } from "react";
@@ -120,13 +173,12 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [rightPanelOpen, setRightPanelOpen] = useState(false); // For More panel
   const location = useLocation();
 
-  // For active link color
   const getActiveClass = (path) =>
     location.pathname === path ? "active-link" : "";
 
-  // Hover handler with delay
   let dropdownTimer;
   const handleMouseEnter = (name) => {
     clearTimeout(dropdownTimer);
@@ -142,7 +194,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        {/* ===== LEFT SIDE LOGO ===== */}
+        {/* ===== LEFT LOGO ===== */}
         <div className="logo-container">
           <Link to="/global" className="logo-link">
             <div className="logo-main">
@@ -159,12 +211,14 @@ const Navbar = () => {
         {/* ===== NAVIGATION MENU ===== */}
         <nav className="nav-links">
           <ul>
-            {/* HOME DROPDOWN */}
+            {/* Home */}
             <li
               onMouseEnter={() => handleMouseEnter("home")}
               onMouseLeave={handleMouseLeave}
             >
-              <Link to="/" className={getActiveClass("/")}>Home</Link>
+              <Link to="/" className={getActiveClass("/")}>
+                Home
+              </Link>
               {activeDropdown === "home" && (
                 <div
                   className="dropdown home-dropdown"
@@ -185,15 +239,12 @@ const Navbar = () => {
               )}
             </li>
 
-            {/* SOLUTIONS DROPDOWN */}
+            {/* Solutions */}
             <li
               onMouseEnter={() => handleMouseEnter("solutions")}
               onMouseLeave={handleMouseLeave}
             >
-              <Link
-                to="/solutions"
-                className={getActiveClass("/solutions")}
-              >
+              <Link to="/solutions" className={getActiveClass("/solutions")}>
                 Solutions
               </Link>
               {activeDropdown === "solutions" && (
@@ -256,7 +307,12 @@ const Navbar = () => {
               <FiSearch className="search-icon" />
             </button>
           </div>
-          <div className="threeIcon-more">
+
+          {/* More Button */}
+          <div
+            className="threeIcon-more"
+            onClick={() => setRightPanelOpen(!rightPanelOpen)}
+          >
             <div className="nav-icon">
               <IoReorderThreeOutline className="three-line-icon" />
             </div>
@@ -264,8 +320,53 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* ===== RIGHT SIDE SLIDE PANEL ===== */}
+      <div
+        className={`right-panel ${rightPanelOpen ? "open" : ""}`}
+        onClick={() => setRightPanelOpen(false)}
+      >
+        <ul>
+          <li>
+            <Link to="/" onClick={() => setRightPanelOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/solutions" onClick={() => setRightPanelOpen(false)}>
+              Solutions
+            </Link>
+          </li>
+          <li>
+            <Link to="/industries" onClick={() => setRightPanelOpen(false)}>
+              Industries We Serve
+            </Link>
+          </li>
+          <li>
+            <Link to="/case-studies" onClick={() => setRightPanelOpen(false)}>
+              Case Studies
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setRightPanelOpen(false)}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" onClick={() => setRightPanelOpen(false)}>
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setRightPanelOpen(false)}>
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
 
 export default Navbar;
+

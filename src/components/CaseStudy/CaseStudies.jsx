@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 import "./CaseStudies.css";
 
-// ✅ Import local images from src/assets folder
-// import wonderImg from "../assets/wonder-cement.jpg";
-// import summitImg from "../assets/investor-summit.jpg";
-// import rallyImg from "../assets/political-rally.jpg";
 import wonderImg from "../../assets/eventAndVideo/event1.jpg";
 import summitImg from "../../assets/eventAndVideo/event2.jpg";
 import rallyImg from "../../assets/eventAndVideo/event3.jpg";
 
-// import event1 from "../../assets/eventAndVideo/event1.jpg";
-// import event2 from "../../assets/eventAndVideo/event2.jpg";
-// import event3 from "../../assets/eventAndVideo/event3.jpg";
 
 const allProjects = [
   {
@@ -60,12 +53,12 @@ const CaseStudies = () => {
     <section className="case-studies-section">
       <div className="container">
         <div className="header">
-          <div className="left">
-            <p className="top-title">Case Studies / Track Record</p>
-            <h2>Proven Performance Across Industries</h2>
+          <div className="case-study-top">
+            <h1 className="top-title">Case Studies / Track Record</h1>
+            <p>Proven Performance Across Industries</p>
           </div>
 
-          <div className="right">
+          <div className="all-buttons">
             <div className="filters">
               {filters.map((f) => (
                 <button
