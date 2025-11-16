@@ -51,10 +51,11 @@
 }
 
 .nav-logo-heading h3 {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  color: #333;
+  color: #555;
   padding-top: 0.2rem;
+  text-transform: uppercase;
 }
 
 .nav-logo-heading h3:hover {
@@ -75,7 +76,7 @@
 
 .nav-links ul li a {
   text-decoration: none;
-  color: #222;
+  color: #555;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 6px 0;
@@ -133,8 +134,63 @@
   margin-top: 2rem;
 }
 
-/* SOLUTIONS DROPDOWN */
+
+
+
+
+/* =======================
+   SOLUTIONS DROPDOWN
+======================= */
 .solution-dropdown {
+  width: 700px;
+  height: 15rem;
+  padding: 2rem;
+}
+
+.solution-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+.solution-col h4 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1.3rem;
+  color: #555;
+}
+
+.solution-columns ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left !important;   
+  
+}
+
+.solution-columns ul li {
+  font-size: .96rem;
+  color: #333;
+  font-weight: 300;
+  cursor: pointer;
+  transition: var(--transition);
+ text-align: left !important;
+ /* border: 2px solid red; */
+}
+
+
+.solution-columns ul li:hover {
+  color: var(--hover-color);
+  transform: translateX(6px);
+}
+
+
+
+
+
+/* SOLUTIONS DROPDOWN */
+/* .solution-dropdown {
   width: 40rem;
 }
 
@@ -155,7 +211,7 @@
 .solution-dropdown ul li:hover {
   color: var(--hover-color);
   transform: translateX(4px);
-}
+} */
 
 /* ===== RIGHT SIDE ===== */
 .nav-right {
@@ -165,7 +221,7 @@
 }
 
 /* Search Button */
-.search-btn {
+/* .search-btn {
   background: transparent;
   border: 1.4px solid #777;
   width: 2.8rem;
@@ -176,16 +232,16 @@
   justify-content: center;
   cursor: pointer;
   transition: var(--transition);
-}
+} */
 
-.searc-div:hover .search-btn {
+/* .searc-div:hover .search-btn {
   background-color: #e7e6e6;
-}
+} */
 
-.search-icon {
+/* .search-icon {
   font-size: 1.2rem;
   color: #000;
-}
+} */
 
 /* More Button */
 .threeIcon-more {
@@ -239,10 +295,10 @@
     gap: 12px;
   }
 
-  .search-btn {
+  /* .search-btn {
     width: 2.5rem;
     height: 2.5rem;
-  }
+  } */
 
   .threeIcon-more {
     width: auto;
@@ -314,10 +370,10 @@
     font-size: 0.8rem;
   }
 
-  .search-btn {
+  /* .search-btn {
     width: 2.2rem;
     height: 2.2rem;
-  }
+  } */
 }
 
 
