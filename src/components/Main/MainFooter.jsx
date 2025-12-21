@@ -35,10 +35,10 @@ const MainFooter = () => {
           <div className='widget-inner'>
             <h2 className="widget__title">How can we help you?</h2>
             <ol className="quickaccess__list">
-              <li><a href="/global/solutions/commercial-space/" id="widget-commercial" className="widget-button">Commercial Space</a></li>
-              <li><a href="/global/configurator/" id="widget-design" className="widget-button">Design your own warehouse</a></li>
-              <li><a href="/global/solutions/event-space-sales/" id="widget-buy" className="widget-button">Buy Event Space</a></li>
-              <li><a href="/global/solutions/event-space-rental/" id="widget-rent" className="widget-button">Rent Event Space</a></li>
+              <li><a href="/global/solutions/commercial-space/" id="widget-commercial" className="widget-button">Design Your Own Warehouse</a></li>
+              <li><a href="/global/configurator/" id="widget-design" className="widget-button">Political & Government Events</a></li>
+              <li><a href="/global/solutions/event-space-sales/" id="widget-buy" className="widget-button">Corporate Events</a></li>
+              <li><a href="/global/solutions/event-space-rental/" id="widget-rent" className="widget-button">Concerts & Grand Weddings</a></li>
             </ol>
           </div>
         </div>

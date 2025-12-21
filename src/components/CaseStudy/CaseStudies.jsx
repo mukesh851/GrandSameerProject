@@ -9,32 +9,32 @@ import rallyImg from "../../assets/eventAndVideo/event3.jpg";
 const allProjects = [
   {
     id: 1,
-    title: "Wonder Cement – Corporate Infrastructure Solutions",
+    title: "Wonder Cement — On-Site Semi-Permanent Infrastructure",
     year: "2024",
     client: "Wonder Cement",
     category: "Corporate",
     description:
-      "Delivered complete modular infrastructure for corporate exhibitions and events.",
+      "Customized hangars delivered for continuous industrial operations, ensuring efficiency, ventilation, and maximum usable space. ",
     image: wonderImg,
   },
   {
     id: 2,
-    title: "Global Investor Summit – Large Scale Government Showcase",
+    title: "Tata Motors — Rapid Industrial Space Deployment",
     year: "2023",
-    client: "Madhya Pradesh Government",
-    category: "Government",
+    client: "Tata Motors",
+    category: "TataMotors",
     description:
-      "Created massive structures and venue solutions for the prestigious Global Investor Summit.",
+      "A fully operational temporary facility constructed under extreme timelines for Tata Motors. Built to withstand heavy equipment, high footfall, and 24×7 industrial usage. ",
     image: summitImg,
   },
   {
     id: 3,
-    title: "High-profile Political Rallies – Mass Gathering Structures",
+    title: "Government of Madhya Pradesh — Chief Minister & Prime Minister Events",
     year: "2022",
     client: "National Party",
     category: "Political",
     description:
-      "Designed and deployed temporary mega structures for high-footfall political gatherings.",
+      "High-security temporary structures built for VIP movement, press briefings, audience seating, and large-scale public events. Delivered with zero-error execution and top-tier safety compliance.",
     image: rallyImg,
   },
 ];
@@ -42,7 +42,7 @@ const allProjects = [
 const CaseStudies = () => {
   const [filter, setFilter] = useState("All");
 
-  const filters = ["All", "Corporate", "Government", "Political"];
+  const filters = ["All", "Corporate", "TataMotors", "Political"];
 
   const filteredProjects =
     filter === "All"

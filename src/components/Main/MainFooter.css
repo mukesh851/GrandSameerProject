@@ -68,14 +68,14 @@
 .widget-container {
   background-color: #fff;
   clip-path: polygon(0 0, calc(100% - 3.125rem) 0, 100% 3.125rem, 100% 100%, 0 100%);
-  width: 23rem;
-  padding-right: 2rem;
+  width: 26.5rem;
+  /* padding-right: 2rem; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
  
 }
 
 .widget-inner {
-  padding: 2rem 2rem 2rem 2.5rem;
+  padding: 2.7rem 2rem 2rem 2.5rem;
 }
 
 .widget__title {
@@ -86,7 +86,7 @@
 }
 
 .quickaccess__list {
-  padding-top: 1.4rem;
+  padding-top: 1.6rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -105,7 +105,7 @@
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  padding: 0.7rem 1.6rem;
+  padding: .7rem 1.6rem;
 }
 
 .quickaccess__list li a {

@@ -23,7 +23,7 @@ const MainGallery = () => {
             </div>
             <div className="gallery-content">
               <h3>Event Space</h3>
-              <p>Complete event structures designed for large-scale functions and exhibitions.</p>
+              <p>Complete, scalable structures for large-scale events — political rallies, corporate summits, exhibitions, trade fairs, and cultural festivals. We handle full planning, execution, and on-ground integration.</p>
               <a href="#" className="gallery-link">Learn More →</a>
             </div>
           </div>
@@ -34,7 +34,7 @@ const MainGallery = () => {
             </div>
             <div className="gallery-content">
               <h3>Commercial Space</h3>
-              <p>Flexible and durable semi-permanent buildings for business and retail purposes.</p>
+              <p>Semi-permanent buildings for commercial use — retail, administrative offices, waiting lounges, airport overflow structures, etc. Flexible and durable for long-term usage.</p>
               <a href="#" className="gallery-link">Learn More →</a>
             </div>
           </div>
@@ -45,7 +45,7 @@ const MainGallery = () => {
             </div>
             <div className="gallery-content">
               <h3>Rapid Deployment</h3>
-              <p>Efficient, deployable space solutions for emergencies and special operations.</p>
+              <p>Emergency-ready structures used for government operations, disaster relief, command centers, medical units, and defence-grade setups. Installed in record timelines.</p>
               <a href="#" className="gallery-link">Learn More →</a>
             </div>
           </div>
@@ -56,7 +56,7 @@ const MainGallery = () => {
             </div>
             <div className="gallery-content">
               <h3>Industrial Space</h3>
-              <p>Adaptable modular structures ideal for warehouses, workshops, and logistics.</p>
+              <p>High-strength hangars and modular warehouses for factories, plants, logistics hubs, repair bays, storage, and temporary expansions. Designed to support heavy-duty operations.</p>
               <a href="#" className="gallery-link">Learn More →</a>
             </div>
           </div>

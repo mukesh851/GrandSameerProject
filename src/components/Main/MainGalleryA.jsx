@@ -25,10 +25,9 @@ const MainGalleryA = () => {
                 <img src={eventImg} alt="Event Space" loading="lazy" />
               </div>
               <div className="columns__text">
-                <h3 className="columns__title">Event Space</h3>
+                <h3 className="columns__title">🏗️ Hangars & Aluminium Domes</h3>
                 <p>
-                  We are the inspirational partner that offers the complete
-                  package for the perfect event.
+                  Large-span structures for summits, exhibitions, and mega events.
                 </p>
                 <a
                   href="/global/solutions/event-space-rental/"
@@ -44,10 +43,9 @@ const MainGalleryA = () => {
                 <img src={commercialImg} alt="Commercial & Public Space" loading="lazy" />
               </div>
               <div className="columns__text">
-                <h3 className="columns__title">Commercial & Public Space</h3>
+                <h3 className="columns__title">🏛️ Political & Government Infrastructure</h3>
                 <p>
-                  As a contractor, we help businesses meet their short term and
-                  long term space requirements.
+                  Secure, compliant setups for rallies, programs, and public events.
                 </p>
                 <a
                   href="/global/solutions/commercial-space/"
@@ -63,10 +61,9 @@ const MainGalleryA = () => {
                 <img src={rapidImg} alt="Rapid Deployment Space" loading="lazy" />
               </div>
               <div className="columns__text">
-                <h3 className="columns__title">Rapid Deployment Space</h3>
+                <h3 className="columns__title">⚡ Rapid Execution Projects</h3>
                 <p>
-                  We are a global supplier of rapidly deployable shelters,
-                  emergency facilities and military space solutions.
+                  Time-critical infrastructure delivered with speed and precision.
                 </p>
                 <a
                   href="/global/solutions/rapid-deployment-space/"

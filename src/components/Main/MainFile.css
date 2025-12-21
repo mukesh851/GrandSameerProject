@@ -38,6 +38,7 @@
   }
 }
 
+
 /* 🔹 Foreground Content */
 .hero-inner {
   position: relative;
@@ -54,14 +55,16 @@
 }
 
 /* Heading */
-.inner-content h1 {
+.inner-content h1 {  
   font-weight: 900;
   font-size: 2.5rem;
+  display: flext;
 }
 
 .inner-content h1 strong {
   display: block;
-  font-size: 7rem;
+  font-size: 5.6rem;
+  width: 100%;
 }
 
 /* Paragraph */
