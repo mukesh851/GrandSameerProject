@@ -111,13 +111,13 @@
 // AboutUs_GrandSameerEvents.jsx 
 
 import React from 'react'
-import './aboutus.css'
+import './Aboutus.css'
 
 import event1 from "../../assets/eventAndVideo/event1.jpg";
 import event2 from "../../assets/eventAndVideo/event2.jpg";
 import event3 from "../../assets/eventAndVideo/event3.jpg";
 // const HeroImage = '/assets/about-hero.jpg'
-import HeroImage from "../../assets/eventAndVideo/event1.jpg";
+// import HeroImage from "../../assets/eventAndVideo/event1.jpg";
 
 export default function AboutUs() {
   return (

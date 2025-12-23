@@ -16,10 +16,10 @@ const MainFile = () => {
         <div className="inner-content">
           {/* <h1>We create <strong>Space</strong></h1> */}
           <h1>Grand Sameer <strong>Events Pvt. Ltd</strong></h1>
-          <p className="intro">
+          {/* <p className="intro">
             Losberger De Boer delivers top class temporary and permanent space
             solutions for events, commercial and public space.
-          </p>
+          </p> */}
           <a href="#" className="inner-content-button">
             Contact LDB
           </a>
