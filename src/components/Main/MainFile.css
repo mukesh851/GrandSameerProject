@@ -1,7 +1,9 @@
 #main-content {
   position: relative;
   overflow: hidden;
-  /* height: 100vh; */
+  height: 83vh;
+  /* padding-top: -8rem; */
+  /* margin-top: 3rem; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -50,20 +52,21 @@
 
 .inner-content {
   width: 50rem;
-  padding: 6rem 4.2rem 4.2rem;
+  padding: 3.5rem 4.2rem 4.2rem;
   color: #fff;
 }
 
 /* Heading */
 .inner-content h1 {  
-  font-weight: 900;
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
   display: flext;
 }
 
 .inner-content h1 strong {
   display: block;
-  font-size: 5.6rem;
+  font-size: 3rem;
+  font-weight: 650;
   width: 100%;
 }
 
