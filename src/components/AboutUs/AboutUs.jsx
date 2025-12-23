@@ -111,7 +111,7 @@
 // AboutUs_GrandSameerEvents.jsx 
 
 import React from 'react'
-import './Aboutus.css'
+import './AboutUs.css'
 
 import event1 from "../../assets/eventAndVideo/event1.jpg";
 import event2 from "../../assets/eventAndVideo/event2.jpg";
