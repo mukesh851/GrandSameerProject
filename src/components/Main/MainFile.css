@@ -59,13 +59,13 @@
 /* Heading */
 .inner-content h1 {  
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flext;
 }
 
 .inner-content h1 strong {
   display: block;
-  font-size: 3rem;
+  font-size: 1.7rem;
   font-weight: 650;
   width: 100%;
 }
@@ -85,7 +85,7 @@
   text-decoration: none;
   text-align: center;
   margin-top: 2rem;
-  padding: 1rem 3rem;
+  padding: .7rem 1.8rem;
   border-radius: 30px;
   transition: all 0.2s ease;
   cursor: pointer;
