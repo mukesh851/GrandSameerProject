@@ -13,11 +13,11 @@ import "./FullGallery.css";
 // import installation2 from "../../assets/eventAndVideo/installation2.mp4";
 // import installation3 from "../../assets/eventAndVideo/installation3.mp4";
 
-import event1 from "../../assets/eventAndVideo/bhopalA17.jpeg";
-import event2 from "../../assets/eventAndVideo/bhopalA3.jpeg";
+import event1 from "../../assets/eventAndVideo/BhopalA17.jpeg";
+import event2 from "../../assets/eventAndVideo/BhopalA3.jpeg";
 import event3 from "../../assets/eventAndVideo/Jabalpur13.jpeg";
-import event4 from "../../assets/eventAndVideo/bhopal9.jpeg";
-import event5 from "../../assets/eventAndVideo/bhopalA4.jpeg";
+import event4 from "../../assets/eventAndVideo/Bhopal9.jpeg";
+import event5 from "../../assets/eventAndVideo/BhopalA4.jpeg";
 import event6 from "../../assets/eventAndVideo/Phitampur2.jpeg";
 import drone1 from "../../assets/eventAndVideo/drone1.jpg";
 import drone2 from "../../assets/eventAndVideo/drone2.jpg";
