@@ -2,9 +2,13 @@
 import React from "react";
 import "./MainGalleryA.css";
 
-import eventImg from "../../assets/images/event.jpg";
-import commercialImg from "../../assets/images/commercial.jpg";
-import rapidImg from "../../assets/images/rapid.jpg";
+// import eventImg from "../../assets/images/event.jpg";
+// import commercialImg from "../../assets/images/commercial.jpg";
+// import rapidImg from "../../assets/images/rapid.jpg";
+
+import HangersImg from "../../assets/spaceSolution/Bhopal7.jpeg";
+import PoliticalImg from "../../assets/spaceSolution/Phitampur1.jpeg";
+import rapidImg from "../../assets/spaceSolution/BhopalA25.jpeg";
 
 const MainGalleryA = () => {
   return (
@@ -22,7 +26,7 @@ const MainGalleryA = () => {
           <div className="columns">
             <div className="columns__item">
               <div className="columns__image">
-                <img src={eventImg} alt="Event Space" loading="lazy" />
+                <img src={HangersImg} alt="Event Space" loading="lazy" />
               </div>
               <div className="columns__text">
                 <h3 className="columns__title">🏗️ Hangars & Aluminium Domes</h3>
@@ -40,7 +44,7 @@ const MainGalleryA = () => {
 
             <div className="columns__item">
               <div className="columns__image">
-                <img src={commercialImg} alt="Commercial & Public Space" loading="lazy" />
+                <img src={PoliticalImg} alt="Commercial & Public Space" loading="lazy" />
               </div>
               <div className="columns__text">
                 <h3 className="columns__title">🏛️ Political & Government Infrastructure</h3>

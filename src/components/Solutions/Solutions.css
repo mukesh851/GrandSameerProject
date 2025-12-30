@@ -53,12 +53,16 @@
   color: #fff;
 }
 
+.solution-Imgcontent{
+  margin-top: 10rem;
+}
+
 /* ===== CARD LAYOUT ===== */
 .solution-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
   gap: 3rem;
   transition: var(--transition);
   opacity: 0;

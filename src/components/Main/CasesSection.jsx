@@ -4,13 +4,22 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./CasesSection.css";
 
-import case1 from "../../assets/cases/cases1.jpg";
-import case2 from "../../assets/cases/cases2.jpg";
-import case3 from "../../assets/cases/cases3.jpg";
-import case4 from "../../assets/cases/cases4.jpg";
-import case5 from "../../assets/cases/cases5.jpg";
-import case6 from "../../assets/cases/cases6.jpg";
-import case7 from "../../assets/cases/cases7.jpg";
+// import case1 from "../../assets/cases/cases1.jpg";
+// import case2 from "../../assets/cases/cases2.jpg";
+// import case3 from "../../assets/cases/cases3.jpg";
+// import case4 from "../../assets/cases/cases4.jpg";
+// import case5 from "../../assets/cases/cases5.jpg";
+// import case6 from "../../assets/cases/cases6.jpg";
+// import case7 from "../../assets/cases/cases7.jpg";
+
+import case1 from "../../assets/cases/BhopalA2.jpeg";
+import case2 from "../../assets/cases/Phitampur4.jpeg";
+import case3 from "../../assets/cases/Sagar4.jpeg";
+import case4 from "../../assets/cases/UjjainLekodaSite4.jpeg";
+import case5 from "../../assets/cases/Jabalpur14.jpeg";
+import case6 from "../../assets/cases/Ujjain3.jpeg";
+import case7 from "../../assets/cases/Bhopal6.jpeg";
+import case8 from "../../assets/cases/Raltam1.jpeg";
 
 const CasesSection = () => {
   const prevRef = useRef(null);
@@ -24,6 +33,7 @@ const CasesSection = () => {
     { img: case5, title: "Temporary School Lytchett Minster Upper School" },
     { img: case6, title: "Land Rover Offroad Experience Center" },
     { img: case7, title: "German television - FIFA World Cup 2022 TV Studio" },
+    { img: case8, title: "Raltam" },
   ];
 
   return (

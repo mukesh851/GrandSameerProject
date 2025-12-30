@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="footer-header">
         <div className="globe">🌐</div>
         <h2>Grand Sameer Events Pvt. Ltd.</h2>
+        <h4>Temporary Infrastructure & Event Execution</h4>
       </div>
 
       <div className="footer-grid">
@@ -15,6 +16,8 @@ const Footer = () => {
           <p>Aluminium Hangars & Domes</p>
           <p>Political & Government Events</p>
           <p>Corporate & Institutional Events</p>
+          <p>Exhibitions & Summits</p>
+          <p>Concerts & Grand Weddings</p>
         </div>
 
         <div className="footer-col">
@@ -38,6 +41,7 @@ const Footer = () => {
           <p><strong>Grand Sameer Events Pvt. Ltd.</strong></p>
           <p>📍 Ujjain / Indore, Madhya Pradesh, India</p>
           <p>📞 +91 XXXXXXXXXX</p>
+          <p>📧 info@grandsameerevents.com</p>
         </div>
       </div>
 

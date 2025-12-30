@@ -39,6 +39,7 @@ const MainFooter = () => {
               <li><a href="/global/configurator/" id="widget-design" className="widget-button">Political & Government Events</a></li>
               <li><a href="/global/solutions/event-space-sales/" id="widget-buy" className="widget-button">Corporate Events</a></li>
               <li><a href="/global/solutions/event-space-rental/" id="widget-rent" className="widget-button">Concerts & Grand Weddings</a></li>
+              <li><a href="/global/solutions/event-space-rental/" id="widget-cultural" className="widget-button">Cultural and religious gathering</a></li>
             </ol>
           </div>
         </div>

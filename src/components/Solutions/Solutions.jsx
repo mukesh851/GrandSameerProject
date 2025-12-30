@@ -57,22 +57,44 @@
 import React from "react";
 import "./Solutions.css";
 
-import img1 from "../../assets/solutionsIm/Corporate.png";
-import img2 from "../../assets/solutionsIm/Government.png";
-import img3 from "../../assets/solutionsIm/Mega.png";
-import img4 from "../../assets/solutionsIm/Cultural.png";
-import img5 from "../../assets/solutionsIm/Luxury.png";
-import img6 from "../../assets/solutionsIm/Sports.png";
-import img7 from "../../assets/solutionsIm/Industrial.png";
+// import img1 from "../../assets/solutionsIm/Corporate.png";
+// import img2 from "../../assets/solutionsIm/Government.png";
+// import img3 from "../../assets/solutionsIm/Mega.png";
+// import img4 from "../../assets/solutionsIm/Cultural.png";
+// import img5 from "../../assets/solutionsIm/Luxury.png";
+// import img6 from "../../assets/solutionsIm/Sports.png";
+// import img7 from "../../assets/solutionsIm/Industrial.png";
+
+import img1 from "../../assets/aboutUs/Jabalpur14.jpeg";
+import img2 from "../../assets/aboutUs/Bhopal9.jpeg";
+import img3 from "../../assets/aboutUs/BhopalA21.jpeg";
+import img4 from "../../assets/aboutUs/Sagar1.jpeg"
+import img5 from "../../assets/aboutUs/BhopalA14.jpeg";
+import img6 from "../../assets/aboutUs/BhopalA4.jpeg";
+import img7 from "../../assets/aboutUs/BhopalA25.jpeg";
+
+
+
+// const data = [
+//   { id: "sol-1", title: "Corporate & Business Excellence", img: img1, desc: "We design world-class environments..." },
+//   { id: "sol-2", title: "Government & Institutional Events", img: img2, desc: "From Prime Ministerial rallies..." },
+//   { id: "sol-3", title: "Mega Political Gatherings", img: img3, desc: "We specialize in mass-scale political rallies..." },
+//   { id: "sol-4", title: "Cultural & Religious Extravaganzas", img: img4, desc: "From Maha Kumbh Melas..." },
+//   { id: "sol-5", title: "Luxury Weddings & Private Celebrations", img: img5, desc: "Designer hangars, grand mandaps..." },
+//   { id: "sol-6", title: "Sports & Entertainment Arenas", img: img6, desc: "We build stadium-scale tents..." },
+//   { id: "sol-7", title: "Industrial & Commercial Solutions", img: img7, desc: "Temporary warehouses, factory setups..." }
+// ];
+
 
 const data = [
-  { id: "sol-1", title: "Corporate & Business Excellence", img: img1, desc: "We design world-class environments..." },
-  { id: "sol-2", title: "Government & Institutional Events", img: img2, desc: "From Prime Ministerial rallies..." },
-  { id: "sol-3", title: "Mega Political Gatherings", img: img3, desc: "We specialize in mass-scale political rallies..." },
-  { id: "sol-4", title: "Cultural & Religious Extravaganzas", img: img4, desc: "From Maha Kumbh Melas..." },
-  { id: "sol-5", title: "Luxury Weddings & Private Celebrations", img: img5, desc: "Designer hangars, grand mandaps..." },
-  { id: "sol-6", title: "Sports & Entertainment Arenas", img: img6, desc: "We build stadium-scale tents..." },
-  { id: "sol-7", title: "Industrial & Commercial Solutions", img: img7, desc: "Temporary warehouses, factory setups..." }
+  { id: "sol-1", title: "🏛️ Government & Institutional Events", img: img1, desc: "From Prime Ministerial rallies to state-level government programs, we deliver secure, protocol-compliant temporary infrastructure at scale." },
+  { id: "sol-2", title: "🗳️ Mega Political Gatherings", img: img2, desc: "We specialize in mass-scale political rallies with large-span hangars, crowd-ready layouts, and rapid on-ground execution." },
+  { id: "sol-3", title: "🏢 Corporate & Business Excellence", img: img3, desc: "World-class infrastructure for corporate summits, investor meets, exhibitions, and high-profile business events." },
+  { id: "sol-4", title: "🕉️ Cultural & Religious Gatherings", img: img4, desc: "Infrastructure for large religious congregations, spiritual events, and gatherings led by Jain saints, spiritual leaders, and religious institutions." },
+  { id: "sol-5", title: "🎶 Concerts & Entertainment Arenas", img: img5, desc: "High-capacity structures for live concerts, music festivals, and entertainment events with safe crowd flow and strong execution." },
+
+  { id: "sol-6", title: "💍 Luxury Weddings & Private Celebrations", img: img6, desc: "Designer hangars, grand mandaps, and premium setups for large weddings and exclusive private celebrations." },
+  { id: "sol-7", title: "🎭 Sports & Entertainment Events", img: img7, desc: "Temporary stadium-scale infrastructure for sports events, shows, and large public entertainment programs. celebrations." }
 ];
 
 const Solutions = () => {
@@ -84,22 +106,24 @@ const Solutions = () => {
           <p>Each category has its own elegant subpage...</p>
         </div>
 
-        {data.map((item, index) => (
-          <div
-            id={item.id}
-            key={item.id}
-            className={`solution-card ${index % 2 === 1 ? "reverse-layout" : ""}`}
-          >
-            <div className="solution-image">
-              <img src={item.img} alt={item.title} />
-            </div>
+        <div className="solution-Imgcontent">
+          {data.map((item, index) => (
+            <div
+              id={item.id}
+              key={item.id}
+              className={`solution-card ${index % 2 === 1 ? "reverse-layout" : ""}`}
+            >
+              <div className="solution-image">
+                <img src={item.img} alt={item.title} />
+              </div>
 
-            <div className="solution-content">
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+              <div className="solution-content">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
