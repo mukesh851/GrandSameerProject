@@ -59,7 +59,7 @@
 
 /* ===== CARD LAYOUT ===== */
 .solution-card {
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: space-between;
   margin-bottom: 7rem;
