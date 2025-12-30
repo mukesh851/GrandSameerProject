@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./CaseStudies.css";
 
-import wonderImg from "../../assets/eventAndVideo/event1.jpg";
-import summitImg from "../../assets/eventAndVideo/event2.jpg";
-import rallyImg from "../../assets/eventAndVideo/event3.jpg";
+import wonderImg from "../../assets/eventAndVideo/Bhopal3.jpeg";
+import summitImg from "../../assets/eventAndVideo/Bhopal3.jpeg";
+import rallyImg from "../../assets/eventAndVideo/Bhopal3.jpeg";
 
 
 const allProjects = [
