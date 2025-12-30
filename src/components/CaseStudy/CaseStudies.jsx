@@ -7,7 +7,7 @@ import rallyImg from "../../assets/eventAndVideo/Bhopal3.jpeg";
 
 
 const allProjects = [
-  {
+  { 
     id: 1,
     title: "Wonder Cement — On-Site Semi-Permanent Infrastructure",
     year: "2024",
