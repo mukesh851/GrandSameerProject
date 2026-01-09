@@ -59,7 +59,7 @@
   width: 100%;
   height: 24.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: end;
  
   margin-top: -5rem;
   /* margin-bottom: 6rem; */
