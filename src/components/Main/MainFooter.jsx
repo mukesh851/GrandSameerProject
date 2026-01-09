@@ -10,7 +10,7 @@ const MainFooter = () => {
           <div className='main-footer1'>
             <p className="hero__featured__title">LATEST NEWS</p>
             <p className="hero__featured__text">
-              Double Gold Win for Losberger De Boer at EMPORIA Awards
+              Latest news dainik bhaskas business excellence award
             </p>
             <a href="/global/news/" id="footer-anchor1" className="link">
               News overview
@@ -20,7 +20,7 @@ const MainFooter = () => {
           <div className='main-footer2'>
             <p className="hero__featured__title">PRODUCT HIGHLIGHT</p>
             <p className="hero__featured__text">
-              Elevate your business with Losberger De Boer’s Levo
+              Product highlight Transparent aluminium hanger
             </p>
             <a href="/global/products-services/event-space/levo/" id="footer-anchor2" className="link">
               The Levo

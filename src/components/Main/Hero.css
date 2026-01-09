@@ -15,10 +15,12 @@
     url("https://images.unsplash.com/photo-1540575467063-178a50c2df87")
       center/cover no-repeat; */
 
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(40, 63, 90, 0.765),
       rgba(75, 76, 74, 0.55)
-    );
+    ); */
+
+    background: radial-gradient(circle at top, #1b4d4f, #0f2027 60%);
 
   display: flex;
   align-items: center;
