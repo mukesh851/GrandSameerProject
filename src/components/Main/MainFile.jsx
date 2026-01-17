@@ -1,5 +1,7 @@
 import './MainFile.css';
-import sameerEvents from "../../assets/mainFileVideo/sameerEvents.mp4";
+// import SameerEvents from "../../assets/mainFileVideo/SameerEvents.mp4";
+import installation2 from "../../assets/eventAndVideo/SameerEventsSecondFinal.mp4";
+
 
 const MainFile = () => {
   return (
@@ -7,7 +9,9 @@ const MainFile = () => {
       {/* 🔹 Background Video */}
       <div className="video-background">
         <video autoPlay loop muted playsInline className="background-video">
-          <source src={sameerEvents} type="video/mp4" />
+          {/* <source src={SameerEvents} type="video/mp4" /> */}
+          <source src={installation2} type="video/mp4" />
+
         </video>
       </div>
 
